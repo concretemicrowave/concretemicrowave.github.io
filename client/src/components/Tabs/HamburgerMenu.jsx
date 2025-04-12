@@ -12,7 +12,6 @@ function HamburgerMenu() {
       <button className="hamburger-icon" onClick={() => setOpen(true)}>
         ☰
       </button>
-
       <div className={`drawer ${open ? "open" : ""}`}>
         <button className="close-btn" onClick={() => setOpen(false)}>
           ✕

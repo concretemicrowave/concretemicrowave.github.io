@@ -1,6 +1,6 @@
 import "./Tabs.css";
 import { useTranslation } from "react-i18next";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import icon from "../../assets/icon.png";
 import HamburgerMenu from "./HamburgerMenu";
 import { useState, useEffect } from "react";
@@ -8,7 +8,12 @@ import { useState, useEffect } from "react";
 function Tabs() {
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language;
+  const location = useLocation();
+
   const [isMobile, setIsMobile] = useState(window.innerWidth < 855);
+  const [scrolled, setScrolled] = useState(false);
+
+  const isHome = location.pathname === "/";
 
   const switchLanguage = (lng) => {
     i18n.changeLanguage(lng);
@@ -20,8 +25,17 @@ function Tabs() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 0);
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const tabsClassName = `tabs ${scrolled || !isHome ? "tabs-dark" : ""}`;
+
   return (
-    <div className="tabs">
+    <div className={tabsClassName}>
       <img src={icon} className="logo" alt="Logo" />
       <div className="divider"></div>
       {isMobile ? (
