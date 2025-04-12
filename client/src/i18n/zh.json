@@ -4,10 +4,13 @@
   "cta-title": "了解更多",
   "cta-button": "关于我们",
   "cta-button-services": "服务",
-  "home": "首頁",
-  "about": "教會介紹",
-  "services": "團契事工",
-  "witness": "團契事工",
-  "church-life": "教會生活",
-  "giving": "奉獻捐贈"
+  "home-tab": "首頁",
+  "about-tab": "教會介紹",
+  "about": {
+    "title": "教會介紹"
+  },
+  "services-tab": "團契事工",
+  "witness-tab": "團契事工",
+  "church-life-tab": "教會生活",
+  "giving-tab": "奉獻捐贈"
 }

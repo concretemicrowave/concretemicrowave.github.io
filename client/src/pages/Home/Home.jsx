@@ -21,8 +21,8 @@ function Home() {
               {t("cta-button-services")}
             </NavLink>
           </div>
+          <div className="home-background"></div>
         </div>
-        <div className="home-background"></div>
       </div>
     </>
   );
