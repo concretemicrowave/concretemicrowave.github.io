@@ -1,5 +1,7 @@
 import "./Tabs.css";
 import { useTranslation } from "react-i18next";
+import { NavLink } from "react-router-dom";
+import icon from "../../assets/icon.png";
 
 function Tabs() {
   const { t, i18n } = useTranslation();
@@ -11,14 +13,27 @@ function Tabs() {
 
   return (
     <div className="tabs">
-      <a className="tab home">{t("home")}</a>
-      <a className="tab">{t("about")}</a>
-      <a className="tab">{t("services")}</a>
-      <a className="tab">{t("witness")}</a>
-      <a className="tab">{t("church-life")}</a>
-      <a className="tab">{t("giving")}</a>
+      <img src={icon} className="logo" alt="Logo" />
+      <div className="divider"></div>
+      <NavLink to="/" className="tab home-tab" activeclassname="active">
+        {t("home")}
+      </NavLink>
+      <NavLink to="/about" className="tab" activeclassname="active">
+        {t("about")}
+      </NavLink>
+      <NavLink to="/services" className="tab" activeclassname="active">
+        {t("services")}
+      </NavLink>
+      <NavLink to="/witness" className="tab" activeclassname="active">
+        {t("witness")}
+      </NavLink>
+      <NavLink to="/church-life" className="tab" activeclassname="active">
+        {t("church-life")}
+      </NavLink>
+      <NavLink to="/giving" className="tab" activeclassname="active">
+        {t("giving")}
+      </NavLink>
       <div className="lang-buttons">
-        <div className="divider"></div>
         <button
           className={`lang-button ${currentLang === "en" ? "button-active" : ""}`}
           onClick={() => switchLanguage("en")}

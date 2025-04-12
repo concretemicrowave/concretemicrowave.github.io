@@ -1,10 +1,10 @@
 .tabs {
   display: flex;
   align-items: center;
-  border-radius: 12px;
-  padding: 0.5rem;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
 }
 
 .tab {
@@ -13,19 +13,22 @@
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-left: auto;
+  margin-left: 8px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
 }
 
-.tab.active {
-  background-color: #e6e6e6;
+.active {
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 .tab:hover {
-  background-color: #e6e6e6;
+  background-color: rgba(255, 255, 255, 0.25);
 }
 
-.home {
-  margin-left: 0;
+.home-tab {
+  margin-left: 8px;
 }
 
 .lang-buttons {
@@ -33,7 +36,8 @@
   justify-content: center;
   gap: 8px;
   align-items: center;
-  margin-left: 8px;
+  margin-left: auto;
+  margin-right: 0.5rem;
 }
 
 .lang-button {
@@ -41,19 +45,26 @@
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  border: 1px solid #000;
+  border: 1px solid #fff;
   background-color: transparent;
   transition: all 0.3s ease;
+  color: #fff;
 }
 
 .lang-button:hover,
 .button-active {
-  background-color: #000;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
 }
 
 .divider {
   width: 1px;
   height: 24px;
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  width: 60px;
+  margin-right: 8px;
+  margin-left: 0.5rem;
 }

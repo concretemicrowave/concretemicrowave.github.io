@@ -1,7 +1,23 @@
 body {
   font-family: "Nunito Sans", sans-serif;
+  margin: 0;
 }
 
 button {
   font-family: "Nunito Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hollow {
+  background-color: transparent !important;
+  color: #fff !important;
+  border: 2px solid #fff !important;
+}
+
+.hollow:hover {
+  background-color: #fff !important;
+  color: black !important;
 }
