@@ -72,13 +72,18 @@
   margin-bottom: 0;
   text-align: left;
   opacity: 0.9;
+  position: relative;
 }
 
-.cta-underline {
-  background-color: #f8b88b;
-  height: 20px;
-  width: 50px;
+.cta-title::after {
+  content: "";
   position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 40%;
+  width: 100%;
+  background-color: #f8b88b;
+  z-index: -1;
 }
 
 .cta-button {
