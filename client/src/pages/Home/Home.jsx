@@ -13,7 +13,10 @@ function Home() {
             <h2 className="home-title tinted">{t("title-2")}</h2>
           </div>
           <div className="cta-container">
-            <h2 className="cta-title">{t("cta-title")}</h2>
+            <div className="cta-title-container">
+              <h2 className="cta-title">{t("cta-title")}</h2>
+              <div className="cta-underline"></div>
+            </div>
             <NavLink to="/about" className="cta-button">
               {t("cta-button")}
             </NavLink>

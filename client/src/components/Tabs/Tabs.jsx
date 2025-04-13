@@ -21,15 +21,18 @@ function Tabs() {
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 855);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 0);
+
+    window.addEventListener("resize", handleResize);
     window.addEventListener("scroll", handleScroll);
+
+    handleResize();
     handleScroll();
-    return () => window.removeEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   const tabsClassName = `tabs ${scrolled || !isHome ? "tabs-dark" : ""}`;
