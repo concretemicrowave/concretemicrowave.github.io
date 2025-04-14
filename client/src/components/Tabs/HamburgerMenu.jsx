@@ -22,18 +22,18 @@ function HamburgerMenu() {
         <NavLink to="/about" onClick={() => setOpen(false)}>
           {t("about-tab")}
         </NavLink>
-        <NavLink to="/services" onClick={() => setOpen(false)}>
+        {/* <NavLink to="/services" onClick={() => setOpen(false)}>
           {t("services-tab")}
-        </NavLink>
+        </NavLink> */}
         <NavLink to="/witness" onClick={() => setOpen(false)}>
           {t("witness-tab")}
         </NavLink>
-        <NavLink to="/church-life" onClick={() => setOpen(false)}>
+        {/* <NavLink to="/church-life" onClick={() => setOpen(false)}>
           {t("church-life-tab")}
         </NavLink>
         <NavLink to="/giving" onClick={() => setOpen(false)}>
           {t("giving-tab")}
-        </NavLink>
+        </NavLink> */}
       </div>
 
       {open && <div className="overlay" onClick={() => setOpen(false)} />}

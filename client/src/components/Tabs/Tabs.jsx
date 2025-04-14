@@ -4,6 +4,8 @@ import { NavLink, useLocation } from "react-router-dom";
 import icon from "../../assets/icon.png";
 import HamburgerMenu from "./HamburgerMenu";
 import { useState, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faExchangeAlt } from "@fortawesome/free-solid-svg-icons";
 
 function Tabs() {
   const { t, i18n } = useTranslation();
@@ -35,12 +37,13 @@ function Tabs() {
     };
   }, []);
 
-  const tabsClassName = `tabs ${scrolled || !isHome ? "tabs-dark" : ""}`;
+  const tabsClassName = `tabs ${scrolled || !isHome ? "tabs-scrolled" : ""}`;
 
   return (
     <div className={tabsClassName}>
-      <img src={icon} className="logo" alt="Logo" />
-      <div className="divider"></div>
+      <NavLink to="/" className="noactive">
+        <img src={icon} className="logo" alt="Logo" />
+      </NavLink>
       {isMobile ? (
         <HamburgerMenu />
       ) : (
@@ -51,32 +54,30 @@ function Tabs() {
           <NavLink to="/about" className="tab" activeclassname="active">
             {t("about-tab")}
           </NavLink>
-          <NavLink to="/services" className="tab" activeclassname="active">
+          {/* <NavLink to="/services" className="tab" activeclassname="active">
             {t("services-tab")}
-          </NavLink>
+          </NavLink> */}
           <NavLink to="/witness" className="tab" activeclassname="active">
             {t("witness-tab")}
           </NavLink>
-          <NavLink to="/church-life" className="tab" activeclassname="active">
+          {/* <NavLink to="/church-life" className="tab" activeclassname="active">
             {t("church-life-tab")}
           </NavLink>
           <NavLink to="/giving" className="tab" activeclassname="active">
             {t("giving-tab")}
-          </NavLink>
+          </NavLink> */}
         </>
       )}
-      <div className="lang-buttons">
+      <div className="lang-container">
         <button
-          className={`lang-button ${currentLang === "en" ? "button-active" : ""}`}
-          onClick={() => switchLanguage("en")}
+          className="lang-button"
+          onClick={() => switchLanguage(currentLang === "en" ? "zh" : "en")}
         >
-          English
-        </button>
-        <button
-          className={`lang-button ${currentLang === "zh" ? "button-active" : ""}`}
-          onClick={() => switchLanguage("zh")}
-        >
-          中文
+          <FontAwesomeIcon
+            icon={faExchangeAlt}
+            style={{ marginRight: "0.5rem" }}
+          />
+          {currentLang === "en" ? "中文" : "English"}
         </button>
       </div>
     </div>

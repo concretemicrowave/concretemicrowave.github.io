@@ -8,8 +8,9 @@
   transition: background-color 0.3s ease;
 }
 
-.tabs-dark {
-  background-color: rgba(34, 34, 34, 0.95) !important;
+.tabs-scrolled {
+  background-color: #fff !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .tab {
@@ -36,7 +37,7 @@
   margin-left: 8px;
 }
 
-.lang-buttons {
+.lang-container {
   display: flex;
   justify-content: center;
   gap: 8px;
@@ -62,14 +63,32 @@
   color: #000;
 }
 
-.divider {
-  width: 1px;
-  height: 24px;
-  background-color: rgba(0, 0, 0, 0.1);
+.noactive {
+  background-color: transparent !important;
 }
 
 .logo {
   width: 60px;
   margin-right: 8px;
   margin-left: 0.5rem;
+}
+
+.tabs-scrolled .tab {
+  color: #333;
+}
+
+.tabs-scrolled .tab:hover,
+.tabs-scrolled .active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.tabs-scrolled .lang-button {
+  color: #333;
+  border-color: #333;
+}
+
+.tabs-scrolled .lang-button:hover,
+.tabs-scrolled .button-active {
+  background-color: #333;
+  color: #fff;
 }
