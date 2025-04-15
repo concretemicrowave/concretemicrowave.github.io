@@ -3,13 +3,16 @@ import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import "./HamburgerMenu.css";
 
-function HamburgerMenu() {
+function HamburgerMenu({ scrolled }) {
   const { t } = useTranslation();
   const [open, setOpen] = useState(false);
 
   return (
     <div className="hamburger-menu">
-      <button className="hamburger-icon" onClick={() => setOpen(true)}>
+      <button
+        className={scrolled ? "hamburger-icon scrolled" : "hamburger-icon"}
+        onClick={() => setOpen(true)}
+      >
         ☰
       </button>
       <div className={`drawer ${open ? "open" : ""}`}>

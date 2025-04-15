@@ -7,7 +7,11 @@
   "home-tab": "Home",
   "about-tab": "About Us",
   "about": {
-    "title": "About Us"
+    "title": "About Us",
+    "card-1": "Contact Us",
+    "card-2": "About the Church",
+    "card-3": "Pastoral Staff",
+    "card-4": "Confession of Faith"
   },
   "services-tab": "Services",
   "witness-tab": "Witnesses",

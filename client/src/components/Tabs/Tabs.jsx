@@ -11,7 +11,6 @@ function Tabs() {
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language;
   const location = useLocation();
-
   const [isMobile, setIsMobile] = useState(window.innerWidth < 855);
   const [scrolled, setScrolled] = useState(false);
 
@@ -45,7 +44,7 @@ function Tabs() {
         <img src={icon} className="logo" alt="Logo" />
       </NavLink>
       {isMobile ? (
-        <HamburgerMenu />
+        <HamburgerMenu scrolled={scrolled || !isHome} />
       ) : (
         <>
           <NavLink to="/" className="tab home-tab" activeclassname="active">
