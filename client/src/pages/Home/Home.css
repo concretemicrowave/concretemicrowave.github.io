@@ -15,7 +15,7 @@
   height: 100%;
   background:
     linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("https://www.tcccanada.org/wp-content/uploads/2018/12/DSC_4853-copy.jpg");
+    url("../../assets/background.jpg");
   background-size: cover;
   background-position: center;
   position: absolute;

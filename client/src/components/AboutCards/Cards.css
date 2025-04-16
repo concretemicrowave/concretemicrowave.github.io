@@ -4,11 +4,22 @@
   gap: 1rem;
 }
 
+@media (max-width: 768px) {
+  .cards-container a {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .card {
   display: flex;
   flex-direction: column;
   max-width: 345px;
   cursor: pointer;
+}
+
+.card:hover h3 {
+  color: #f8b88b;
 }
 
 .image-wrapper {
@@ -32,4 +43,5 @@
   margin: 0.5rem 0 0 0;
   font-weight: 500;
   color: #000;
+  transition: all 0.15s ease-in;
 }

@@ -13,7 +13,7 @@ export default function Cards() {
 
   return (
     <div className="cards-container">
-      <NavLink to="/about/aboutthechurch">
+      <NavLink to="/about/church">
         <div className="card">
           <div className="image-wrapper">
             <img src={aboutthechurch} alt="About the Church" />

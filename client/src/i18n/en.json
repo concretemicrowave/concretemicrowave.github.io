@@ -8,12 +8,24 @@
   "about-tab": "About Us",
   "about": {
     "title": "About Us",
-    "card-1": "Contact Us",
-    "card-2": "About the Church",
+    "card-1": "About the Church",
+    "card-2": "Contact Us",
     "card-3": "Pastoral Staff",
-    "card-4": "Confession of Faith"
+    "card-4": "Confession of Faith",
+    "church-about": {
+      "title": "About > About the Church",
+      "content-1": "In February 1997, Pastor Li Yongquan and his family came to Vancouver for further studies, observation, and participation in church planting ministry. In August 1999, realizing that there were very few churches in the eastern Vancouver area preaching God’s Word in Mandarin, Pastor Li began the first Sunday worship service of Trinity Community Church in his home after much prayer. At that time, only six people attended the service — four from the pastor’s family and two students boarding at their home.",
+
+      "content-2": "Later in May 2000, Trinity Community Church began renting a classroom at Walnut Grove Community Centre in Langley for Sunday worship. In the first ten years, as the Langley area was mainly home to local residents with few Chinese immigrants, the church primarily consisted of a few families and mostly international students. Over the decade, the church experienced people coming and going, faced many shortages and challenges, yet the covenant-keeping and loving Triune God strengthened the faith of the pastor and brothers and sisters, and in the waiting, we witnessed God accomplishing great things among us.",
+
+      "content-3": "Thank God! His thoughts and will surpass all that we could ask or imagine. A church that once was weak and small in strength has now become a spiritual home for many friends and brothers and sisters who have moved to Langley. By God's grace and great love, we join hands and hearts to receive and share His abundant grace, intercede for one another on the journey of this brief life, and build a gospel-centered, God-glorifying church.",
+
+      "content-4": "Trinity Community Church is currently the only Chinese church in the Langley area of Canada. The congregation mainly consists of brothers and sisters and seekers from Mainland China, Hong Kong, and Taiwan, with the current attendance stabilizing around 100 people. As the number of Chinese immigrants and visitors in Langley and surrounding areas continues to increase rapidly, the church feels an urgent sense of mission—to ensure that every Chinese person who comes to our community has the opportunity to hear the gospel and be drawn by the love of Christ, to build a God-pleasing, love-filled home for every believer, and to nurture spiritual fruit through the continual outpouring of the Holy Spirit, becoming faithful soldiers of Jesus Christ.",
+
+      "content-5": "In addition to Sunday worship and children's Sunday school every Sunday afternoon, the church currently has regular adult small groups, university student groups, youth fellowships, topical Bible study groups, and prayer meetings. These fellowship activities are suitable for Christians and seekers of all ages. The church is willing to offer whatever help it can to families who have just moved to Langley and surrounding areas, making the church a spiritual home you can rely on while on earth."
+    }
   },
-  "services-tab": "Services",
+  "sermons-tab": "Sermons",
   "witness-tab": "Witnesses",
   "church-life-tab": "Church Life",
   "giving-tab": "Giving"

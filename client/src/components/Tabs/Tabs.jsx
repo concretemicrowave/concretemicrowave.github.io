@@ -53,12 +53,12 @@ function Tabs() {
           <NavLink to="/about" className="tab" activeclassname="active">
             {t("about-tab")}
           </NavLink>
-          {/* <NavLink to="/services" className="tab" activeclassname="active">
-            {t("services-tab")}
-          </NavLink> */}
-          <NavLink to="/witness" className="tab" activeclassname="active">
-            {t("witness-tab")}
+          <NavLink to="/sermons" className="tab" activeclassname="active">
+            {t("sermons-tab")}
           </NavLink>
+          {/* <NavLink to="/witness" className="tab" activeclassname="active">
+            {t("witness-tab")}
+          </NavLink> */}
           {/* <NavLink to="/church-life" className="tab" activeclassname="active">
             {t("church-life-tab")}
           </NavLink>
