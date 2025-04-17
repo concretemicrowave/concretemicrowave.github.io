@@ -19,7 +19,7 @@
 }
 
 .card:hover h3 {
-  color: #f8b88b;
+  color: var(--accent);
 }
 
 .image-wrapper {

@@ -19,22 +19,22 @@ function HamburgerMenu({ scrolled }) {
         <button className="close-btn" onClick={() => setOpen(false)}>
           ✕
         </button>
-        <NavLink to="/" onClick={() => setOpen(false)}>
+        <NavLink to="/" className="tab home-tab" activeclassname="active">
           {t("home-tab")}
         </NavLink>
-        <NavLink to="/about" onClick={() => setOpen(false)}>
+        <NavLink to="/about" className="tab" activeclassname="active">
           {t("about-tab")}
         </NavLink>
-        {/* <NavLink to="/services" onClick={() => setOpen(false)}>
-          {t("services-tab")}
-        </NavLink> */}
-        <NavLink to="/witness" onClick={() => setOpen(false)}>
-          {t("witness-tab")}
+        <NavLink to="/sermons" className="tab" activeclassname="active">
+          {t("sermons-tab")}
         </NavLink>
-        {/* <NavLink to="/church-life" onClick={() => setOpen(false)}>
+        {/* <NavLink to="/witness" className="tab" activeclassname="active">
+          {t("witness-tab")}
+        </NavLink> */}
+        {/* <NavLink to="/church-life" className="tab" activeclassname="active">
           {t("church-life-tab")}
         </NavLink>
-        <NavLink to="/giving" onClick={() => setOpen(false)}>
+        <NavLink to="/giving" className="tab" activeclassname="active">
           {t("giving-tab")}
         </NavLink> */}
       </div>

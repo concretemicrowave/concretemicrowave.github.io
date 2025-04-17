@@ -1,9 +1,10 @@
 {
+  "title": "Trinity Community Church",
   "title-1": "Rooted in Christ",
   "title-2": "Growing in Community",
   "cta-title": "Learn More",
-  "cta-button": "About Us",
-  "cta-button-services": "Services",
+  "cta-button": "Join Us",
+  "cta-button-about": "About the Church",
   "home-tab": "Home",
   "about-tab": "About Us",
   "about": {
@@ -24,6 +25,9 @@
 
       "content-5": "In addition to Sunday worship and children's Sunday school every Sunday afternoon, the church currently has regular adult small groups, university student groups, youth fellowships, topical Bible study groups, and prayer meetings. These fellowship activities are suitable for Christians and seekers of all ages. The church is willing to offer whatever help it can to families who have just moved to Langley and surrounding areas, making the church a spiritual home you can rely on while on earth."
     }
+  },
+  "sermons": {
+    "title": "Sermons"
   },
   "sermons-tab": "Sermons",
   "witness-tab": "Witnesses",

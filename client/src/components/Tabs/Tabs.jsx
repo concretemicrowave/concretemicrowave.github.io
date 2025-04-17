@@ -22,7 +22,7 @@ function Tabs() {
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 855);
-    const handleScroll = () => setScrolled(window.scrollY > 0);
+    const handleScroll = () => setScrolled(window.scrollY > 50);
 
     window.addEventListener("resize", handleResize);
     window.addEventListener("scroll", handleScroll);
