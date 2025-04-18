@@ -1,0 +1,53 @@
+.latest-sermon {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #e7e7e7;
+  transform: translateY(-12px);
+}
+
+.latest-sermon h2 {
+  margin-top: 0;
+}
+
+.latest-sermon p {
+  margin: 0;
+}
+
+.video-wrapper {
+  overflow: hidden;
+  border-radius: 8px;
+  width: 40vw;
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.video-wrapper iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 8px;
+  border: none;
+}
+
+.latest-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 450px;
+}
+
+@media (max-width: 870px) {
+  .latest-sermon {
+    flex-direction: column;
+  }
+
+  .video-wrapper {
+    width: 100%;
+  }
+}
