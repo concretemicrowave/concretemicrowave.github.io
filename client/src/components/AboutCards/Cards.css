@@ -9,23 +9,25 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .card {
+    max-width: 363px;
+  }
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  max-width: 345px;
+  width: 500px;
   cursor: pointer;
 }
 
-.card:hover h3 {
-  color: var(--accent);
-}
-
 .image-wrapper {
+  position: relative;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 12px;
   aspect-ratio: 3/2;
+  width: 100%;
 }
 
 .image-wrapper img {
@@ -40,8 +42,15 @@
 }
 
 .card h3 {
-  margin: 0.5rem 0 0 0;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  margin: 0;
   font-weight: 500;
-  color: #000;
+  color: white;
   transition: all 0.15s ease-in;
+}
+
+.card:hover h3 {
+  color: var(--accent);
 }

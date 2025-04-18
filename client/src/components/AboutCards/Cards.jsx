@@ -17,40 +17,40 @@ export default function Cards() {
         <div className="card">
           <div className="image-wrapper">
             <img src={aboutthechurch} alt="About the Church" />
+            <h3>
+              <FontAwesomeIcon icon={faLink} /> {t("about.card-1")}
+            </h3>
           </div>
-          <h3>
-            <FontAwesomeIcon icon={faLink} /> {t("about.card-1")}
-          </h3>
         </div>
       </NavLink>
       <NavLink to="/about/contactus">
         <div className="card">
           <div className="image-wrapper">
             <img src={contactus} alt="Contact Us" />
+            <h3>
+              <FontAwesomeIcon icon={faLink} /> {t("about.card-2")}
+            </h3>
           </div>
-          <h3>
-            <FontAwesomeIcon icon={faLink} /> {t("about.card-2")}
-          </h3>
         </div>
       </NavLink>
       <NavLink to="/about/pastoralstaff">
         <div className="card">
           <div className="image-wrapper">
             <img src={pastoralstaff} alt="Pastoral Staff" />
+            <h3>
+              <FontAwesomeIcon icon={faLink} /> {t("about.card-3")}
+            </h3>
           </div>
-          <h3>
-            <FontAwesomeIcon icon={faLink} /> {t("about.card-3")}
-          </h3>
         </div>
       </NavLink>
       <NavLink to="/about/profession">
         <div className="card">
           <div className="image-wrapper">
             <img src={profession} alt="Profession" />
+            <h3>
+              <FontAwesomeIcon icon={faLink} /> {t("about.card-4")}
+            </h3>
           </div>
-          <h3>
-            <FontAwesomeIcon icon={faLink} /> {t("about.card-4")}
-          </h3>
         </div>
       </NavLink>
     </div>
